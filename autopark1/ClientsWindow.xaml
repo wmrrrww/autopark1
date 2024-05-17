@@ -1,0 +1,38 @@
+﻿<Window x:Class="autopark1.ClientsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:autopark1"
+        mc:Ignorable="d"
+        Title="Clients" Height="450" Width="800">
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="190*"/>
+            <ColumnDefinition Width="59*"/>
+        </Grid.ColumnDefinitions>
+
+        <DataGrid x:Name="ClientsGrid" AutoGenerateColumns="False" HorizontalAlignment="Left" VerticalAlignment="Top" Height="350" Width="775" Margin="5,4,0,0" Grid.ColumnSpan="2">
+            <DataGrid.Columns>
+
+               
+                <DataGridTextColumn Header="ФИО" Binding="{Binding ФИО}" />
+                <DataGridTextColumn Header="Почта" Binding="{Binding Почта}" />
+                <DataGridTextColumn Header="Телефон" Binding="{Binding Телефон}" />
+                <DataGridTextColumn Header="Адрес" Binding="{Binding Адрес}" />
+
+            </DataGrid.Columns>
+
+
+        </DataGrid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,372,0,0" Height="40" Width="412" RenderTransformOrigin="0.5,0.5">
+            <Button Content="Добавить" Click="AddButton_Click" Width="130" Height="30" Background="#FFC2CBE3"/>
+            <Button Content="Изменить" Click="UpdateButton_Click" Width="130" Height="30" Margin="5" Background="#FFC2CBE3"/>
+            <Button Content="Удалить" Click="DeleteButton_Click" Width="130" Height="30" Background="#FFC2CBE3"/>
+        </StackPanel>
+
+
+
+
+    </Grid>
+</Window>

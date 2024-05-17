@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d1dee1b8e36a438aa11c25eb6451ccce" Name="Diagram1">
+        <EntityTypeShape EntityType="auto_parkModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="auto_parkModel.Автомобили" Width="1.5" PointX="0.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="auto_parkModel.Аренда" Width="1.5" PointX="3" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="auto_parkModel.Водители" Width="1.5" PointX="5.25" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="auto_parkModel.Клиенты" Width="1.5" PointX="0.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="auto_parkModel.Маршруты" Width="1.5" PointX="3" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="auto_parkModel.Остановки" Width="1.5" PointX="3" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="auto_parkModel.Остановки_Маршруты" Width="1.5" PointX="5.25" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="auto_parkModel.Платежи" Width="1.5" PointX="6" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="auto_parkModel.Продажи" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="auto_parkModel.Сотрудники" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="auto_parkModel.Услуги_По_Обслуживанию" Width="1.5" PointX="3" PointY="19.625" IsExpanded="true" />
+        <AssociationConnector Association="auto_parkModel.FK_Аренда_Автомобили" ManuallyRouted="false" />
+        <AssociationConnector Association="auto_parkModel.FK_Продажи_Автомобили" ManuallyRouted="false" />
+        <AssociationConnector Association="auto_parkModel.FK_Услуги_По_Обслуживанию_Автомобили" ManuallyRouted="false" />
+        <AssociationConnector Association="auto_parkModel.FK_Аренда_Клиенты" ManuallyRouted="false" />
+        <AssociationConnector Association="auto_parkModel.FK_Водители_Маршруты" ManuallyRouted="false" />
+        <AssociationConnector Association="auto_parkModel.FK_Маршруты_Клиенты" ManuallyRouted="false" />
+        <AssociationConnector Association="auto_parkModel.FK_Платежи_Клиенты" ManuallyRouted="false" />
+        <AssociationConnector Association="auto_parkModel.FK_Продажи_Клиенты" ManuallyRouted="false" />
+        <AssociationConnector Association="auto_parkModel.FK_Остановки_Маршруты_Маршруты" ManuallyRouted="false" />
+        <AssociationConnector Association="auto_parkModel.FK_Остановки_Маршруты_Остановки" ManuallyRouted="false" />
+        <AssociationConnector Association="auto_parkModel.FK_Платежи_Сотрудники" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

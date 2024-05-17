@@ -1,0 +1,25 @@
+﻿<Window x:Class="autopark1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:autopark1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Content="Клиенты" Click="ClientsButton_Click" Margin="5"/>
+            <Button Content="Сотрудники" Click="EmployeesButton_Click" Margin="5"/>
+            <Button Content="Платежи" Click="PaymentsButton_Click" Margin="5"/>
+            <Button Content="Маршруты" Click="RoutesButton_Click" Margin="5"/>
+            <Button Content="Остановки" Click="StopsButton_Click" Margin="5"/>
+            <Button Content="Водители" Click="DriversButton_Click" Margin="5"/>
+            <Button Content="Продажи" Click="SalesButton_Click" Margin="5"/>
+            <Button Content="Аренда" Click="RentalsButton_Click" Margin="5"/>
+            <Button Content="Автомобили" Click="CarsButton_Click" Margin="5"/>
+            <Button Content="Услуги по обслуживанию" Click="ServicesButton_Click" Margin="5"/>
+            <Button Content="Отчет по продажам" Click="SalesReportButton_Click" Margin="5"/>
+            <Button Content="Отчет по аренде" Click="SalesReportButton_Click" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>
