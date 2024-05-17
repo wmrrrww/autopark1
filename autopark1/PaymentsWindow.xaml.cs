@@ -51,6 +51,8 @@ namespace autopark1
 
                     var newPayment = new Платежи
                     {
+                        ID_Сотрудника = selectedPayment.ID_Сотрудника,
+                        ID_Клиента = selectedPayment.ID_Клиента,
                         Сумма = selectedPayment.Сумма,
                         Дата_Платежа = selectedPayment.Дата_Платежа,
                         Номер_Счета = selectedPayment.Номер_Счета.ToString(), // Преобразование в строку

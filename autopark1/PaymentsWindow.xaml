@@ -9,6 +9,8 @@
     <Grid>
         <DataGrid x:Name="PaymentsGrid" AutoGenerateColumns="False" HorizontalAlignment="Left" VerticalAlignment="Top" Height="300" Width="700" Margin="20">
             <DataGrid.Columns>
+                <DataGridTextColumn Header="Сотрудника" Binding="{Binding Сотрудники.ФИО}" />
+                <DataGridTextColumn Header="Клиента" Binding="{Binding Клиенты.ФИО}" />
                 <DataGridTextColumn Header="Сумма" Binding="{Binding Сумма}" />
                 <DataGridTextColumn Header="Дата Платежа" Binding="{Binding Дата_Платежа}" />
                 <DataGridTextColumn Header="Номер Счета" Binding="{Binding Номер_Счета}" />
